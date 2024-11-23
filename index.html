@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Appointment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" id="home"><img src="images/Home.png">Home</a>
+        <a href="/categories.html" id="categories"><img src="images/Categories.png">Categories</a>
+        <a href="/about.html" id="about"><img src="images/About.png">About</a>
+        <a href="/contact.html" id="contact"><img src="images/Contact.png">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="leftside">
+            <form id="appointmentForm">
+                <h2>EDUCATION APPOINTMENT FORM</h2>
+                <input type="text" placeholder="Title" id="title" required>
+                <input type="text" placeholder="Your Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required>
+
+                <div id="phone">
+                    <select id="areaCode" name="areaCode" required>
+                        <option value="areaCode" selected disabled hidden>Area Code: </option>
+                    </select>
+                    <input type="tel" placeholder="Phone Number (7 digits)" id="phoneNumber" maxlength="7" pattern="\d{7}" required>
+                </div>
+
+
+                <select name="courseType" id="courseType" required>
+                    <option value="courseType" selected disabled hidden>Course Type:</option>
+                </select>
+
+               
+                <select name="city" id="city" required>
+                    <option value="city" selected disabled hidden>City:</option>
+                </select>
+
+                <label id="contactLabel" for="contactMethod">How would you like to be located?</label>
+                <select id="contactMethod" name="contactMethod" required>
+                    <option value="phone">By phone</option>
+                    <option value="email">By email</option>
+                    <option value="sms">By SMS message</option>
+                </select>
+
+                <select id="hours" name="hours" required>
+                    <option value="hours" selected disabled hidden>Hours: 8am 10pm</option>
+                    <option value="8am-10am">8am-10am</option>
+                    <option value="10am-12pm">10am-12pm</option>
+                    <option value="12pm-2pm">12pm-2pm</option>
+                    <option value="2pm-4pm">2pm-4pm</option>
+                    <option value="4pm-6pm">4pm-6pm</option>
+                    <option value="6pm-8pm">6pm-8pm</option>
+                    <option value="8pm-10pm">8pm-10pm</option>
+                </select>
+
+                <label id="checkboxLabel">
+                    <input type="checkbox" id="terms" required>I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+
+                <button type="submit" id="submitBtn">Request an Appointment</button>
+                
+            </form>
+        </div>
+        <div class="rightside">
+            <a href="https://www.adidas.com.tr/tr" id="stickyAd">
+                <button id="closeAd"><img src="images/close.png" alt="close" title="Close ad" ></button>
+            </a>
+            
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
