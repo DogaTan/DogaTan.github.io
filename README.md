@@ -1,6 +1,6 @@
 # DogaTan.github.io
 
-# Education Appointment Form
+# SE3355-MIDTERM (EDUCATION APPOINTMENT FORM)
 
 This project is a simple web application designed to allow users to fill out and submit an education appointment form. The application includes navigation to supplementary pages and uses external stylesheets for a cohesive design.
 
