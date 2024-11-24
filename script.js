@@ -40,7 +40,7 @@ document.getElementById('name').addEventListener('keydown', function (e) {
 
 
 
-// JS CODE for Dropdowns (City and Course Type)
+// JS CODE for Dropdowns (City, Course Type, and Area Code)
 document.addEventListener("DOMContentLoaded", () => {
     const cityDropdown = document.getElementById("city");
     const courseTypeDropdown = document.getElementById("courseType");
